@@ -8,7 +8,7 @@ Package.on_use(function (api, where) {
 });
 
 Package.on_test(function (api) {
-  api.use('authentication');
+  api.use('alpha-auth');
 
   api.add_files('authentication_tests.js', ['client', 'server']);
 });
