@@ -1,6 +1,7 @@
 Package.describe({
   summary: "Provides basic authentication",
-  version: "0.0.1"
+  version: "0.0.1",
+  name: "bads:alpha-auth"
 });
 
 Package.on_use(function (api, where) {
@@ -15,10 +16,4 @@ Package.on_use(function (api, where) {
     'accounts-password'
   ]);
   api.add_files(['authentication.html', 'authentication.coffee', 'authentication.styl'], 'client');
-});
-
-Package.on_test(function (api) {
-  api.use("../packages/bads:alpha-auth");
-
-  api.add_files('authentication_tests.js', ['client', 'server']);
 });
